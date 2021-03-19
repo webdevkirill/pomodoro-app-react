@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
@@ -31,6 +32,7 @@ h2 {
 }
 
 .timer {
+	font-family: "Major Mono Display", monospace;
 	color: #1f6e72;
 	font-size: 150px;
 	margin-bottom: 20px;
