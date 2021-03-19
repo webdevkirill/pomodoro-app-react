@@ -7,6 +7,7 @@ export default function App() {
 		title,
 		minutes,
 		seconds,
+		isRunning,
 		startTimer,
 		stopTimer,
 		resetTimer,
@@ -23,8 +24,11 @@ export default function App() {
 			</div>
 
 			<div className='buttons'>
-				<button onClick={startTimer}>Старт</button>
-				<button onClick={stopTimer}>Стоп</button>
+				{!isRunning ? (
+					<button onClick={startTimer}>Старт</button>
+				) : (
+					<button onClick={stopTimer}>Стоп</button>
+				)}
 				<button onClick={resetTimer}>Сброс</button>
 			</div>
 		</div>
